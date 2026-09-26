@@ -102,8 +102,8 @@ punctuator:
 
 key_binder:
   bindings:
-    # 空格键选第一候选词
-    - { when: has_menu, accept: space, send: 1 }
+    # 空格：全拼组合态由 IME 插入音节分隔符 '；此处不再绑成选词
+    # - { when: has_menu, accept: space, send: 1 }
     # 回车键提交输入编码
     - { when: composing, accept: Return, send: Return }
     # 退格键删除
